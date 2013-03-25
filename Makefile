@@ -87,6 +87,10 @@ autobahn: clean clean-deps deps app
 	@mkdir -p logs/
 	@$(CT_RUN) -suite autobahn_SUITE
 
+ejd: clean clean-deps deps app
+	@mkdir -p logs/
+	@$(CT_RUN) -suite ejd_SUITE
+
 # Dialyzer.
 
 build-plt: deps app
